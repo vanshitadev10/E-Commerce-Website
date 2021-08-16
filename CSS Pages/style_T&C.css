@@ -1,0 +1,85 @@
+body{
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+/* Logo */
+
+.img{
+    position: absolute;
+    width: 8%;
+    left: 0px;
+    top: 0px;
+}
+
+/* Text */
+.t-c{
+    margin-left: 15%;
+    font-size: 40px;
+}
+
+h1{
+    font-weight: normal;
+}
+
+h2{
+    font-weight: lighter;
+}
+
+/* Footer */
+
+footer{
+    background-color: rgb(36, 35, 35);
+    color: white;
+    padding: 1px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    font-size: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+
+/* Making The Website Responsive */
+
+@media only screen and (min-width: 400px) and (max-width: 750px){
+    .img{
+        width: 10%;
+    }
+
+    .t-c{
+        font-size: 30px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 400px){
+    .img{
+        width: 12%;
+    }
+
+    .t-c{
+        font-size: 21px;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+
+    footer{
+        font-size: 0.6rem;
+    }
+}
