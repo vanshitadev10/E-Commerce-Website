@@ -354,10 +354,10 @@ footer{
     .progress .img1{
         position: absolute;
         display: block;
-        width: 40%;
+        width: 30%;
         height: 30%;
         top: 16%;
-        left: 30%;
+        left: 35%;
     }
 
     .heading h1{
@@ -488,7 +488,7 @@ footer{
         display: block;
         width: 300px;
         height: 30%;
-        top: 1%;
+        top: 2.5%;
         left: 0px;
         right: 0px;
         margin: auto;
@@ -571,7 +571,7 @@ footer{
         display: block;
         width: 220px;
         height: 30%;
-        top: 1%;
+        top: 2.8%;
         left: 0px;
         right: 0px;
         margin: auto;
