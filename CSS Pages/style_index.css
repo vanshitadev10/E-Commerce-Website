@@ -44,11 +44,16 @@
     color: black;
     background-color: #f0d6b0;
     border-radius: 2px;
+    padding: 1.5px 3px;
+}
+
+.navbar .navigation .act{
+    padding: 3.5px 3px;
 }
 
 .navbar .navigation li a.active{
-    border-top: 4px solid #550d01;    
-    border-bottom: 4px solid #550d01; 
+    border-top: 3.5px solid #550d01;    
+    border-bottom: 3.5px solid #550d01; 
 }
 
 .navbar .navigation li a.act:before, .navbar .navigation li a.act:after{
