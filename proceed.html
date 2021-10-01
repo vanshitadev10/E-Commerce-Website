@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS Pages/style_proceed.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+    <title>Proceed-To-Checkout</title>
+</head>
+
+<body>
+    <div>
+        <img class="img" src="images/logo.png" alt="T-TrantFashions">
+    </div>
+
+    <div class="stickers">
+        <div class="stick">
+            <img src="images/globe.png" alt="world" class="image1">
+            <h2>Global Delivery</h2>
+        </div>
+        <div class="stick">
+            <img src="images/satisfied.png" alt="satisfied" class="image2">
+            <h2>Millions Of Satisfied Coustomers</h2>
+        </div>
+        <div class="stick">
+            <img src="images/lock.png" alt="secure" class="image3">
+            <h2>100% Payment Security</h2>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <form>
+            <div class="order-form">
+                <h1>Please Fill Out The Form To Proceed With Order</h1>
+                <div class="form">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="YourFirstName" id="fname" class="text" required>
+                </div>
+
+                <div class="form">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="YourLastName" id="lname" class="text" required>
+                </div>
+
+                <div class="form">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="YourPhone" id="phone" class="text" required>
+                </div>
+
+                <div class="form">
+                    <label for="email">Email-id:</label>
+                    <input type="email" name="YourEmail" id="email" class="text" required>
+                </div>
+
+                <div class="form">
+                    <label for="address">Address:</label>
+                    <input type="text" name="YourAddress" id="address" class="text" required>
+                </div>
+
+                <div class="form">
+                    <label for="state">State:</label>
+                    <select name="state" id="state" class="text">
+                        <option value="Other" selected>Other</option>
+                        <option value="Andaman and Nicobar Island">Andaman and Nicobar Island</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman
+                            and Diu
+                        </option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Ladakh">Ladakh</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Puducherry">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                </div>
+
+                <div class="form">
+                    <label for="city">City:</label>
+                    <input type="text" name="YourCity" id="city" class="text" required>
+                </div>
+
+                <div class="form">
+                    <label for="zip">ZIP Code:</label>
+                    <input type="number" name="YourZIP" id="zip" class="text" required>
+                </div>
+
+                <div class="btn">
+                    <input type="submit" class="btn1" value="Submit">
+                    <input type="reset" class="btn2" value="Reset">
+                </div>
+            </div>
+            <div class="info">
+                <h2>Shipping Charges: Rs. 99/-</h2>
+                <h2 class="last">Arrival-Time: Within 6-7 days</h2>
+            </div>
+        </form>
+
+        <div class="order">
+            <div class="items_display">
+            <h1>Your Order Summary
+                <button class="delete_btn cart-btns">
+                    <img src="images/clear.png" alt="close">
+                </button>
+            </h1>
+            <div class="order_info"></div>
+            </div>
+            <div class="ord_btn">
+                <div class="price">Total Price = <span class="pri">0</span>/-</div>
+                <a href="payment.html" target="_blank" class="payment">Make Payment</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>Created by Vanshita Dev | &copy;2021 All Rights Reserved</footer>
+
+    <script src="script4.js"></script>
+</body>
+
+</html>
