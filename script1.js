@@ -8,3 +8,12 @@ function hide() {
         number.style.display = 'none';
     }
 }
+
+
+var sub = document.querySelector('.btn3');
+
+sub.addEventListener('click', (e) => {
+    if(!(confirm('Are You Sure You Wish To Submit These Details?'))){
+        e.preventDefault();
+    }
+})
