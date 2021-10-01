@@ -71,7 +71,6 @@ label{
     background-color: #e6e6e6;
     text-align: center;
     border-radius: 4px;
-    padding: 2px;
 }
 
 .container .info{
@@ -488,7 +487,7 @@ footer{
     }
 
     .container .order-form .form .text{
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     .container .order-form .btn1{
@@ -613,7 +612,7 @@ footer{
     }
 
     .container .order-form .form .text{
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     .container .order-form .btn1{
@@ -742,7 +741,7 @@ footer{
     }
 
     .container .order-form .form .text{
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 
     .container .order-form .btn1{
