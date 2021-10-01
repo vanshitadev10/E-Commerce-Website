@@ -27,11 +27,217 @@ body{
     flex-direction: row;
 }
 
+/* Cart */
+
+.cart-btn{
+    position: fixed;
+    right: 1.2%;
+    top: 2%;
+    width: 3.7%;
+    height: 6.8%;
+    border: none;
+    background-color: white;
+    display: block;
+}
+
+.cart-btn:hover{
+    cursor: pointer;
+    background-color: #cecece;
+}
+
+
+.open{
+    display: none;
+    position: fixed;
+    width: 400px;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    background: white;
+    border: 4px solid #cecece;
+    animation: slide-out 1s ease-in-out;
+}
+
+@keyframes slide-out{
+    from{
+        width: 0px;
+    }
+
+    to{
+        width: 400px;
+    }
+}
+
+.open .close-btn{
+    position: absolute;
+    right: 368px;
+    top: 1.5%;
+    width: 6.8%;
+    background-color: white;
+    height: 3.3%;
+    border: none;
+    animation: slide-out-btn 1s ease-in-out;
+}
+
+@keyframes slide-out-btn{
+    from{
+        right: 0px;
+        width: 0px;
+    }
+
+    to{
+        right: 385px;
+        width: 0px;
+    }
+}
+
+.open .close-btn:hover{
+    cursor: pointer;
+    background-color: #cecece;
+}
+
+.open .close-btn .cart{
+    position: absolute;
+    right: 3%;
+    top: 2%;
+}
+
+.open .cart_heading{
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.open .cart_para{
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 2px;
+    padding: 13px;
+    padding-bottom: 10px;
+}
+
+.open .cart_count{
+    font-size: 1.6rem;
+    padding: 3px;
+    margin-bottom: 1.5px;
+}
+
+.cart_count .delete_btn{
+    position: absolute;
+    margin-bottom: -4px;
+    right: 40px;
+    height: 4.5%;
+    width: 10%;
+}
+
+.open .clear_info{
+    font-weight: lighter;
+    position: absolute;
+    font-size: 0.8rem;
+}
+
+.open .proceed{
+    border: 4px solid #ff7a32;
+    text-align: center;
+    background-color: #fac0a1;
+    font-size: 2rem;
+    width: fit-content;
+    position: absolute;
+    bottom: 36px;
+    margin-left: 12.5%;
+}
+
+.open .proceed a{
+    text-decoration: none;
+    color: black;
+}
+
+.open .proceed a:hover{
+    cursor: pointer;
+    background-color: #faece4;
+}
+
+.open .info{
+    font-weight: lighter;
+    position: absolute;
+    bottom: 140px;
+    font-size: 0.8rem;
+}
+
+.open .save_btn{
+    border: 4px solid black;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    width: fit-content;
+    bottom: 100px;
+    margin-left: 40%;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.open .save_btn:hover{
+    cursor: pointer;
+    background-color: #dfdfdf;
+    color: #000;
+}
+
+/* Classes For Cart */
+
+.cart_content{
+    position: absolute;
+    top: 265px;
+    bottom: 160px;
+    width: 99%;
+    overflow-y: scroll;
+}
+
+.cart_flex{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #cecece;
+    width: 99%;
+    height: 20%;
+    margin-bottom: 2%;
+}
+
+.cart_image{
+    height: 100%;
+    width: 22%;
+}
+
+.cart_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    padding: 4px;
+    font-size: 0.8rem;
+}
+
+.cart_block .cart-btns{
+    position: relative;
+    width: 100%;
+    background-color: white;
+    height: 37%;
+    border: none;
+    border-radius: 50%;
+}
+
+.cart-btns:hover{
+    cursor: pointer;
+    background-color: #cecece;
+}
+
+
 /* Aside & Section */
 
 #aside{
     margin: 4px;
     margin-left: 8px;
+    margin-right: 8px;
     box-shadow: 3px 3px 5px grey;
 }
 
@@ -82,7 +288,7 @@ body{
     cursor: pointer;
 }
 
-/* --End (Extras of Jewelry section)-- */
+/* ---- */
 
 .images h2{
     width: 100%;
@@ -129,8 +335,8 @@ body{
     height: 350px;
     width: 350px;
     padding: 25px;
-    margin-left: 105px;
-    margin-right: 105px;
+    margin-left: 103px;
+    margin-right: 103px;
 }
 
 /* Footer */
@@ -148,12 +354,13 @@ footer{
     bottom: 0px;
     left: 0px;
     width: 100%;
+    z-index: 3;
 }
 
 
 /* Making The Website Responsive */
 
-@media only screen and (min-width: 1350px) and (max-width: 1470px){
+@media only screen and (min-width: 1360px) and (max-width: 1470px){
 
     .images .photos .box .img{
         height: 300px;
@@ -168,7 +375,7 @@ footer{
     }
 }
 
-@media only screen and (min-width: 1250px) and (max-width: 1350px){
+@media only screen and (min-width: 1260px) and (max-width: 1360px){
 
     .images .photos .box .img{
         height: 300px;
@@ -184,7 +391,7 @@ footer{
     }
 }
 
-@media only screen and (min-width: 1150px) and (max-width: 1250px){
+@media only screen and (min-width: 1160px) and (max-width: 1260px){
 
     .images .photos .box .img{
         height: 300px;
@@ -200,10 +407,106 @@ footer{
     }
 }
 
-@media only screen and (min-width: 970px) and (max-width: 1150px){
+@media only screen and (min-width: 970px) and (max-width: 1160px){
 
     .img-logo{
         width: 8%;
+    }
+
+    .cart-btn{
+        right: 1%;
+        width: 4%;
+        height: 6%;
+    }
+
+    .cart_img{
+        width: 90%;
+        height: 90%;
+    }
+
+    .open{
+        width: 350px;
+    }
+
+    @keyframes slide-out{
+        from{
+            width: 0px;
+        }
+    
+        to{
+            width: 350px;
+        }
+    }
+
+    .open .close-btn{
+        right: 320px;
+    }
+    
+    @keyframes slide-out-btn{
+        from{
+            right: 0px;
+            width: 0px;
+        }
+    
+        to{
+            right: 335px;
+            width: 0px;
+        }
+    }
+
+    .open .cart_heading{
+        font-size: 2rem;
+    }
+    
+    .open .cart_para{
+        font-size: 1.1rem;
+    }
+
+    .open .cart_count{
+        font-size: 1.3rem;
+    }
+    
+    .cart_count .delete_btn{
+        height: 5%;
+    }
+
+    .open .proceed{
+        font-size: 1.6rem;
+        margin-left: 16%;
+    }
+
+    .open .save_btn{
+        font-size: 1rem;
+        bottom: 92px;
+        margin-left: 42%;
+    }
+
+    .open .info{
+        bottom: 130px;
+        font-size: 0.7rem;
+    }
+
+    .cart_content{
+        position: absolute;
+        top: 235px;
+        bottom: 150px;
+    }
+
+    .open .clear_info{
+        font-size: 0.7rem;
+    }
+    
+    .cart_flex{
+        margin-bottom: 1.5%;
+    }
+    
+    .cart_image{
+        height: 100%;
+        width: 22%;
+    }
+
+    .cart_block{
+        font-size: 0.7rem;
     }
 
     .images .photos .box{
@@ -228,6 +531,98 @@ footer{
     .img-logo{
         width: 8%;
     }
+
+    .cart-btn{
+        right: 1%;
+        width: 5%;
+        height: 4.8%;
+    }
+
+    .cart_img{
+        width: 92%;
+        height: 90%;
+    }
+
+    .open{
+        width: 350px;
+    }
+
+    @keyframes slide-out{
+        from{
+            width: 0px;
+        }
+    
+        to{
+            width: 350px;
+        }
+    }
+
+    .open .close-btn{
+        right: 320px;
+    }
+    
+    @keyframes slide-out-btn{
+        from{
+            right: 0px;
+            width: 0px;
+        }
+    
+        to{
+            right: 335px;
+            width: 0px;
+        }
+    }
+
+    .open .cart_heading{
+        font-size: 2rem;
+    }
+    
+    .open .cart_para{
+        font-size: 1.1rem;
+    }
+
+    .open .cart_count{
+        font-size: 1.3rem;
+    }
+    
+    .cart_count .delete_btn{
+        height: 5%;
+    }
+
+    .open .proceed{
+        font-size: 1.6rem;
+        margin-left: 16%;
+    }
+
+    .open .save_btn{
+        font-size: 1rem;
+        bottom: 92px;
+        margin-left: 42%;
+    }
+
+    .open .info{
+        bottom: 130px;
+    }
+
+    .cart_content{
+        position: absolute;
+        top: 250px;
+        bottom: 150px;
+    }
+    
+    .cart_flex{
+        margin-bottom: 1.5%;
+    }
+    
+    .cart_image{
+        height: 100%;
+        width: 22%;
+    }
+
+    .cart_block{
+        font-size: 0.7rem;
+    }
+
 
     .images h2{
         font-size: 1.7rem;
@@ -259,6 +654,109 @@ footer{
     .heading{
         margin-left: 30%;
         text-align: left;
+    }
+
+    .cart-btn{
+        right: 1%;
+        width: 5%;
+        height: 4.8%;
+    }
+
+    .cart_img{
+        width: 92%;
+        height: 90%;
+    }
+
+    .open{
+        width: 320px;
+    }
+
+    @keyframes slide-out{
+        from{
+            width: 0px;
+        }
+    
+        to{
+            width: 320px;
+        }
+    }
+
+    .open .close-btn{
+        right: 295px;
+    }
+    
+    @keyframes slide-out-btn{
+        from{
+            right: 0px;
+            width: 0px;
+        }
+    
+        to{
+            right: 305px;
+            width: 0px;
+        }
+    }
+
+    .open .cart_heading{
+        font-size: 1.8rem;
+    }
+    
+    .open .cart_para{
+        font-size: 1rem;
+    }
+
+    .open .cart_count{
+        font-size: 1.1rem;
+    }
+    
+    .cart_count .delete_btn{
+        height: 5%;
+    }
+
+    .open .proceed{
+        font-size: 1.4rem;
+        margin-left: 16%;
+    }
+
+    .open .save_btn{
+        font-size: 0.9rem;
+        bottom: 85px;
+        margin-left: 41.5%;
+        border: 3px solid black;
+    }
+
+    .open .info{
+        bottom: 115px;
+        font-size: 0.7rem;
+    }
+
+    .open .clear_info{
+        font-size: 0.7rem;
+    }
+
+    .cart_content{
+        position: absolute;
+        top: 230px;
+        bottom: 145px;
+    }
+    
+    .cart_flex{
+        margin-bottom: 1.5%;
+        width: 98%;
+    }
+    
+    .cart_image{
+        height: 100%;
+        width: 20%;
+    }
+
+    .cart_block{
+        font-size: 0.7rem;
+        padding: 0px;
+    }
+
+    .cart_block .cart-btns{
+        width: 90%;
     }
 
     .container{
@@ -317,6 +815,109 @@ footer{
         margin-left: 30%;
         text-align: left;
         font-size: 2rem;
+    }
+
+    .cart-btn{
+        right: 2%;
+        width: 6%;
+        height: 4.8%;
+    }
+
+    .cart_img{
+        width: 110%;
+        height: 80%;
+    }
+
+    .open{
+        width: 320px;
+    }
+
+    @keyframes slide-out{
+        from{
+            width: 0px;
+        }
+    
+        to{
+            width: 320px;
+        }
+    }
+
+    .open .close-btn{
+        right: 295px;
+    }
+    
+    @keyframes slide-out-btn{
+        from{
+            right: 0px;
+            width: 0px;
+        }
+    
+        to{
+            right: 305px;
+            width: 0px;
+        }
+    }
+
+    .open .cart_heading{
+        font-size: 1.8rem;
+    }
+    
+    .open .cart_para{
+        font-size: 1rem;
+    }
+
+    .open .cart_count{
+        font-size: 1.1rem;
+    }
+    
+    .cart_count .delete_btn{
+        height: 5%;
+    }
+
+    .open .proceed{
+        font-size: 1.4rem;
+        margin-left: 16%;
+    }
+
+    .open .save_btn{
+        font-size: 0.9rem;
+        bottom: 85px;
+        margin-left: 42%;
+        border: 3px solid black;
+    }
+
+    .open .info{
+        bottom: 115px;
+        font-size: 0.7rem;
+    }
+
+    .open .clear_info{
+        font-size: 0.7rem;
+    }
+
+    .cart_content{
+        position: absolute;
+        top: 230px;
+        bottom: 145px;
+    }
+    
+    .cart_flex{
+        margin-bottom: 1.5%;
+        width: 98%;
+    }
+    
+    .cart_image{
+        height: 100%;
+        width: 20%;
+    }
+
+    .cart_block{
+        font-size: 0.7rem;
+        padding: 0px;
+    }
+
+    .cart_block .cart-btns{
+        width: 90%;
     }
 
     .container{
@@ -383,6 +984,110 @@ footer{
         text-align: left;
     }
 
+    .cart-btn{
+        right: 2%;
+        width: 7%;
+        height: 4.8%;
+    }
+
+    .cart_img{
+        width: 110%;
+        height: 80%;
+    }
+
+    .open{
+        width: 280px;
+    }
+
+    @keyframes slide-out{
+        from{
+            width: 0px;
+        }
+    
+        to{
+            width: 280px;
+        }
+    }
+
+    .open .close-btn{
+        top: 1%;
+        right: 255px;
+    }
+    
+    @keyframes slide-out-btn{
+        from{
+            right: 0px;
+            width: 0px;
+        }
+    
+        to{
+            right: 275px;
+            width: 0px;
+        }
+    }
+
+    .open .cart_heading{
+        font-size: 1.5rem;
+    }
+    
+    .open .cart_para{
+        font-size: 0.8rem;
+    }
+
+    .open .cart_count{
+        font-size: 0.9rem;
+    }
+    
+    .cart_count .delete_btn{
+        height: 4.5%;
+    }
+
+    .open .proceed{
+        font-size: 1.2rem;
+        margin-left: 15%;
+    }
+
+    .open .save_btn{
+        font-size: 0.7rem;
+        bottom: 80px;
+        margin-left: 40%;
+        border: 3px solid black;
+    }
+
+    .open .info{
+        bottom: 110px;
+        font-size: 0.6rem;
+    }
+
+    .open .clear_info{
+        font-size: 0.6rem;
+    }
+
+    .cart_content{
+        position: absolute;
+        top: 200px;
+        bottom: 135px;
+    }
+    
+    .cart_flex{
+        margin-bottom: 1.5%;
+        width: 98%;
+    }
+    
+    .cart_image{
+        height: 100%;
+        width: 20%;
+    }
+
+    .cart_block{
+        font-size: 0.7rem;
+        padding: 0px;
+    }
+
+    .cart_block .cart-btns{
+        width: 90%;
+    }
+
     .container{
         flex-direction: column;
     }
@@ -443,8 +1148,112 @@ footer{
 
     .heading{
         margin-left: 30%;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         text-align: left;
+    }
+
+    .cart-btn{
+        right: 2%;
+        width: 7%;
+        height: 4.5%;
+    }
+
+    .cart_img{
+        width: 110%;
+        height: 80%;
+    }
+
+    .open{
+        width: 250px;
+    }
+
+    @keyframes slide-out{
+        from{
+            width: 0px;
+        }
+    
+        to{
+            width: 250px;
+        }
+    }
+
+    .open .close-btn{
+        top: 1%;
+        right: 230px;
+    }
+    
+    @keyframes slide-out-btn{
+        from{
+            right: 0px;
+            width: 0px;
+        }
+    
+        to{
+            right: 255px;
+            width: 0px;
+        }
+    }
+
+    .open .cart_heading{
+        font-size: 1.3rem;
+    }
+    
+    .open .cart_para{
+        font-size: 0.8rem;
+    }
+
+    .open .cart_count{
+        font-size: 0.9rem;
+    }
+    
+    .cart_count .delete_btn{
+        height: 4.5%;
+    }
+
+    .open .proceed{
+        font-size: 1.2rem;
+        margin-left: 14.5%;
+    }
+
+    .open .save_btn{
+        font-size: 0.7rem;
+        bottom: 80px;
+        margin-left: 40%;
+        border: 3px solid black;
+    }
+
+    .open .info{
+        bottom: 110px;
+        font-size: 0.6rem;
+    }
+
+    .open .clear_info{
+        font-size: 0.6rem;
+    }
+
+    .cart_content{
+        position: absolute;
+        top: 195px;
+        bottom: 135px;
+    }
+    
+    .cart_flex{
+        margin-bottom: 1.5%;
+        width: 98%;
+    }
+    
+    .cart_image{
+        height: 100%;
+        width: 22%;
+    }
+
+    .cart_block{
+        font-size: 0.6rem;
+        padding: 0px;
+    }
+
+    .cart_block .cart-btns{
+        width: 90%;
     }
 
     .container{
