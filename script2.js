@@ -1257,7 +1257,7 @@ save_btn.addEventListener('click', () => {
             localStorage.setItem('list1', JSON.stringify(arr));
         }
 
-        else if (ran > 33  &&  ran <= 48) {
+        else if (ran > 32  &&  ran <= 48) {
             localStorage.setItem('list2', JSON.stringify(arr));
         }
 
