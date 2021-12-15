@@ -191,7 +191,7 @@ body{
     top: 265px;
     bottom: 160px;
     width: 99%;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .cart_flex{
